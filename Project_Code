@@ -1,0 +1,50 @@
+
+-- Coded in sqlite on Codecademy
+
+-- TASK 4
+ 
+SELECT *
+FROM population_years
+WHERE country = 'Gabon'
+ORDER by population DESC;
+
+
+
+-- TASK 5
+
+SELECT DISTINCT *
+FROM population_years
+WHERE year = 2005
+ORDER BY population ASC
+LIMIT 10;
+
+
+-- TASK 6
+
+SELECT DISTINCT *
+FROM population_years
+WHERE year = 2010
+AND population > 100
+ORDER BY population DESC;
+
+
+
+-- TASK 7
+
+SELECT DISTINCT country
+FROM population_years
+WHERE country LIKE '%Islands%';
+
+-- TASK 8
+
+SELECT *
+FROM population_years
+WHERE country = 'Indonesia'
+AND year = 2010;
+
+SELECT *
+FROM population_years
+WHERE country = 'Indonesia'
+AND year = 2000;
+
+--Answer is top minus bottom result.
